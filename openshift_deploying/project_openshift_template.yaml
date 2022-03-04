@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Template 
+parameters: 
+  - description: project_name
+    name: project_name
+    value: project_name
+objects:
+- apiVersion: project.openshift.io/v1
+  kind: Project
+  metadata:
+    name: ${project_name}
+  spec:
+    finalizers:
+      - kubernetes
+  type: Opaque
+metadata: 
+  name: dronelab-ui-template

@@ -1,0 +1,246 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.009798,
+                    32.9638032,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "CRIMINAL DAMAGE 2ND DEGREE",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200007886"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.9998416,
+                    32.9639472,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "SIMPLE BATTERY",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200008898"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0192394,
+                    32.9535767,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "BURGLARY FORCED ENTRY-NON RESIDENTIAL",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200007481"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0034465,
+                    32.9613547,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Vehicle Break-In / Theft",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200005669"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0012149,
+                    32.9567456,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Theft / Larceny",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200300385"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0073947,
+                    32.9519202,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Vehicle Break-In / Theft",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200005669"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0188961,
+                    32.9570337,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Assault\n",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>190118968"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0170936,
+                    32.951272,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Vandalism",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200007886"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0210418,
+                    32.9562415,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Vehicle Break-In / Theft",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200040205"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0201835,
+                    32.9685559,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Theft / Larceny",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "-21fe3a8d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "Incident #<br>200018550"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.0150078,
+                    32.9545687,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Coppell",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        }
+    ]
+}

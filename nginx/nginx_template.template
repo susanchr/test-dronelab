@@ -1,0 +1,46 @@
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    # HTTP server
+    #
+    server {
+        listen       $NGINX_PORT;
+        server_name  nginx_server;
+
+        location /api/ {
+            proxy_pass $DATA_PROTOCOL$DATA_SERVER/;
+            # note this slash  ----^
+            proxy_set_header Host $DATA_SERVER;
+            proxy_ssl_verify off;
+        }   
+        
+        location / {
+            root   /app;
+            index  index.html index.htm;
+        }
+    }
+    include servers/*;
+}

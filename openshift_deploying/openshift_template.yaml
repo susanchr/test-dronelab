@@ -1,0 +1,222 @@
+apiVersion: v1
+kind: Template 
+parameters: 
+  - description: project_name
+    name: project_name
+    value: project_name
+  - description: app_name
+    name: app_name
+    value: app_name
+  - description: route_name
+    name: route_name
+    value: route_name
+  - description: git_secret_name
+    name: git_secret_name
+    value: git_secret_name
+  - description: git_username
+    name: git_username
+    value: git_username
+  - description: git_token
+    name: git_token
+    value: git_token
+  - description: data_server
+    name: data_server
+    value: data_server
+  - description: nginx_port
+    name: nginx_port
+    value: nginx_port
+  - description: git_uri
+    name: git_uri
+    value: git_uri
+  - description: git_ref
+    name: git_ref
+    value: git_ref
+objects:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    namespace: ${project_name}
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: ${app_name}
+    name: node
+  spec:
+    lookupPolicy:
+      local: false
+    tags:
+    - annotations:
+        openshift.io/imported-from: node:14
+      from:
+        kind: DockerImage
+        name: node:14
+      generation: null
+      importPolicy: {}
+      name: latest
+      referencePolicy:
+        type: ""
+  status:
+    dockerImageRepository: ""
+- apiVersion: v1
+  kind: "Secret"
+  metadata: 
+    name: "${git_secret_name}"
+    namespace: "${project_name}"
+  data:
+    password: ${git_token}
+    username: ${git_username}
+  type: "kubernetes.io/basic-auth"
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    namespace: ${project_name}
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: ${app_name}
+    name: ${app_name}
+  spec:
+    lookupPolicy:
+      local: false
+  status:
+    dockerImageRepository: ""
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    namespace: ${project_name}
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: ${app_name}
+    name: ${app_name}
+  spec:
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: ${app_name}:latest
+    postCommit: {}
+    resources: {}
+    source:
+      git:
+        uri: ${git_uri}
+        ref: ${git_ref}
+      sourceSecret:
+        name: gsc-credentials
+      type: Git
+    strategy:
+      dockerStrategy:
+        dockerfilePath: Dockerfile
+        env:
+          - name: DATA_SERVER
+            value: ${data_server}
+          - name: NGINX_PORT
+            value: ${nginx_port}
+      type: Docker
+    triggers:
+    - github:
+        secret: 3TRtZqfA0rWQzh6Y0OlN
+      type: GitHub
+    - generic:
+        secret: dQshmaOcp5w2Fy1xWX2W
+      type: Generic
+    - type: ConfigChange
+    - imageChange: {}
+      type: ImageChange
+  status:
+    lastVersion: 0
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    namespace: ${project_name}
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: ${app_name}
+    name: ${app_name}
+  spec:
+    replicas: 1
+    selector:
+      app: ${app_name}
+      deploymentconfig: ${app_name}
+    strategy:
+      resources: {}
+    template:
+      metadata:
+        namespace: ${project_name}
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          app: ${app_name}
+          deploymentconfig: ${app_name}
+      spec:
+        containers:
+        - image: ${app_name}:latest
+          name: ${app_name}
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          resources: {}
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - ${app_name}
+        from:
+          kind: ImageStreamTag
+          name: ${app_name}:latest
+      type: ImageChange
+  status:
+    availableReplicas: 0
+    latestVersion: 0
+    observedGeneration: 0
+    replicas: 0
+    unavailableReplicas: 0
+    updatedReplicas: 0
+- apiVersion: v1
+  kind: Service
+  metadata:
+    namespace: ${project_name}
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: ${app_name}
+    name: ${app_name}
+  spec:
+    ports:
+    - name: 8080-tcp
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      app: ${app_name}
+      deploymentconfig: ${app_name}
+  status:
+    loadBalancer: {}
+- apiVersion: route.openshift.io/v1
+  kind: Route
+  metadata:
+    name: ${route_name}
+    namespace: ${project_name}
+    labels:
+      app: "${app_name}"
+    annotations:
+      openshift.io/host.generated: 'true'
+  spec:
+    to:
+      kind: Service
+      name: ${app_name}
+      weight: 100
+    port:
+      targetPort: 8080-tcp
+    wildcardPolicy: None
+metadata: 
+  name: dronelab-ui-template

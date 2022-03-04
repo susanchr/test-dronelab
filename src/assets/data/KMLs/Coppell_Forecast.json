@@ -1,0 +1,64 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    -97.008,
+                                    32.947,
+                                    0
+                                ],
+                                [
+                                    -96.981,
+                                    32.9475,
+                                    0
+                                ],
+                                [
+                                    -96.9815,
+                                    32.97,
+                                    0
+                                ],
+                                [
+                                    -97.0085,
+                                    32.9695,
+                                    0
+                                ],
+                                [
+                                    -97.008,
+                                    32.947,
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            -96.99,
+                            32.96,
+                            0
+                        ]
+                    }
+                ]
+            },
+            "properties": {
+                "name": "Forecast for Coppell TX (32.96N, 96.99W)",
+                "styleUrl": "#icon-1899-DB4436",
+                "styleHash": "-16b7f06d",
+                "styleMapHash": {
+                    "normal": "#icon-1899-DB4436-normal",
+                    "highlight": "#icon-1899-DB4436-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "<img src=\"\/assets\/img\/forecastPopup.png\" style=\"width: 100%;object-fit: contain;\"/>"
+            }
+        }
+    ]
+}

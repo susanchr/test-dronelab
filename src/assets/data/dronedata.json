@@ -1,0 +1,256 @@
+[
+    {
+        "location": "Coppell, TX",
+        "center": [
+            -97.0012149,
+            32.9567456
+        ],
+        "style": "mapbox://styles/mapbox/streets-v11",
+        "zoom": 13,
+        "usage": "Rescue Coordination",
+        "date": "Monday April 6, 2020",
+        "duration": "09:04-09:16",
+        "flightTime": "12 min",
+        "weather": "Scattered Clouds",
+        "flyRoute": [
+            [
+                -97.0006523,
+                32.9451307
+            ],
+            [
+                -97.0040747,
+                32.9467915
+            ],
+            [
+                -97.004273,
+                32.9466902
+            ],
+            [
+                -97.0037207,
+                32.9475565
+            ],
+            [
+                -97.0006523,
+                32.9451307
+            ]
+        ],
+        "flyCenter": [
+            32.9451307,
+            -97.0006523
+        ],
+        "droneLocations": [
+            {
+                "connectStatus": "Available",
+                "discSpace": 0.8,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "DZXLIWCIXZYNST",
+                "dronePic": "https://images.unsplash.com/photo-1533309907656-7b1c2ee56ddf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.945854357433106,
+                    -97.00041626560699
+                ]
+            },
+            {
+                "connectStatus": "Available",
+                "discSpace": 0.8,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "OWUHWNCNEONPLP",
+                "dronePic": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.94275710706637,
+                    -96.99766968357578
+                ]
+            },
+            {
+                "connectStatus": "Not Available",
+                "discSpace": 0.3,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "CTKOOSURZPCYHG",
+                "dronePic": "https://images.unsplash.com/photo-1456615913800-c33540eac399?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.94203680073278,
+                    -97.00131748783588
+                ]
+            }
+        ]
+    },
+    {
+        "center": [
+            -97.0006523,
+            32.9451307
+        ],
+        "style": "mapbox://styles/mapbox/streets-v11",
+        "zoom": 14,
+        "usage": "Safety Analysis",
+        "date": "Monday April 27, 2020",
+        "duration": "11:04-09:16",
+        "flightTime": "19 min",
+        "location": "Coppell, TX (GSC)",
+        "weather": "Scattered Clouds",
+        "flyRoute": [
+            [
+                -96.995042,
+                32.942841
+            ],
+            [
+                -96.995580,
+                32.942913
+            ],
+            [
+                -96.995564,
+                32.943309
+            ],
+            [
+                -96.994196,
+                32.943278
+            ],
+            [
+                -96.994169,
+                32.942238
+            ],
+            [
+                -96.995499,
+                32.942224
+            ],
+            [
+                -96.995042,
+                32.942841
+            ]
+        ],
+        "flyCenter": [
+            32.942841,
+            -96.995042
+        ],
+        "droneLocations": [
+            {
+                "connectStatus": "Available",
+                "discSpace": 0.8,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "DZXLIWCIXZYNST",
+                "dronePic": "https://images.unsplash.com/photo-1533309907656-7b1c2ee56ddf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.945854357433106,
+                    -97.00041626560699
+                ]
+            },
+            {
+                "connectStatus": "Not Available",
+                "discSpace": 0.8,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "OWUHWNCNEONPLP",
+                "dronePic": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.94275710706637,
+                    -96.99766968357578
+                ]
+            },
+            {
+                "connectStatus": "Not Available",
+                "discSpace": 0.3,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "CTKOOSURZPCYHG",
+                "dronePic": "https://images.unsplash.com/photo-1456615913800-c33540eac399?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.94203680073278,
+                    -97.00131748783588
+                ]
+            }
+        ]
+    },
+    {
+        "center": [
+            -97.0006523,
+            32.9451307
+        ],
+        "style": "mapbox://styles/mapbox/streets-v11",
+        "zoom": 12,
+        "usage": "Damage Inspection",
+        "date": "Thursday May 14, 2020",
+        "duration": "10:44-09:11",
+        "flightTime": "30 min",
+        "location": "Coppell, TX",
+        "weather": "Scattered Clouds",
+        "flyRoute": [
+            [
+                -96.994231,
+                32.942760
+            ],
+            [
+                -96.992847,
+                32.942784
+            ],
+            [
+                -96.989205,
+                32.941246
+            ],
+            [
+                -96.987076,
+                32.933553
+            ],
+            [
+                -96.990919,
+                32.923921
+            ],
+            [
+                -96.999598,
+                32.923330
+            ],
+            [
+                -96.998876,
+                32.936325
+            ],
+            [
+                -96.994231,
+                32.942760
+            ]
+        ],
+        "flyCenter": [
+            32.936040,
+            -96.993043
+        ],
+        "droneLocations": [
+            {
+                "connectStatus": "Available",
+                "discSpace": 0.8,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "DZXLIWCIXZYNST",
+                "dronePic": "https://images.unsplash.com/photo-1533309907656-7b1c2ee56ddf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.945854357433106,
+                    -97.00041626560699
+                ]
+            },
+            {
+                "connectStatus": "Not Available",
+                "discSpace": 0.8,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "OWUHWNCNEONPLP",
+                "dronePic": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.94275710706637,
+                    -96.99766968357578
+                ]
+            },
+            {
+                "connectStatus": "Not Available",
+                "discSpace": 0.3,
+                "friendly_name": "",
+                "model_type": "DJI",
+                "drone_serial_no": "CTKOOSURZPCYHG",
+                "dronePic": "https://images.unsplash.com/photo-1456615913800-c33540eac399?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "coordinate": [
+                    32.94203680073278,
+                    -97.00131748783588
+                ]
+            }
+        ]
+    }
+]

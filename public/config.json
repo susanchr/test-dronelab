@@ -1,0 +1,30 @@
+{
+    "ConsoleDisplayName": "Remote Operations Console",
+    "UserDrones": [
+        {
+            "friendly_name": "DJI Tello",
+            "drone_serial_no": "DZXLIWCIXZYNST",
+            "drone_id":"drone1",
+            "pilot":"Drew B"
+        },
+        {
+            "friendly_name": "Mavic Mini",
+            "drone_serial_no": "OWUHWNCNEONPLP",
+            "drone_id":"drone2",
+            "pilot":"Greg J"
+        },
+        {
+            "friendly_name": "Matrice 210 v2",
+            "drone_serial_no": "CTKOOSURZPCYHG",
+            "drone_id":"drone3",
+            "pilot":"Greg J"
+        }
+    ],
+    "DroneOperations": [
+        "Rescue Coordination",
+        "Damage Inspection",
+        "Safety Analysis",
+        "Stormwater Operations Monitor",
+        "Geothermal Monitor"
+    ]
+}

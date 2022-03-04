@@ -1,0 +1,15 @@
+version: '3'
+services: 
+    drone-ui-server:
+        build:
+          context: .
+          dockerfile: Dockerfile
+          args:
+            - DATA_PROTOCOL=https://
+            - DATA_SERVER=host.docker.internal:8080
+            - NGINX_PORT=8081
+        container_name: drone-ui-server
+        # volumes: 
+        # - ./build:/usr/share/nginx /
+        ports:
+        - "8081:8081"
